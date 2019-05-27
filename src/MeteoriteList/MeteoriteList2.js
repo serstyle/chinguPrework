@@ -139,14 +139,14 @@ function CustomPaginationActionsTable({meteoriteArr, isPending}) {
                 <TableRow>error oopsie</TableRow>:
             meteoriteArr.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map(row => (
                 <TableRow className={classes.row} key={row.id}>
-                <TableCell>{row.name}</TableCell>
-                <TableCell>{row.id}</TableCell>
-                <TableCell>{row.nametype}</TableCell>
-                <TableCell>{row.mass}</TableCell>
-                <TableCell>{row.fall}</TableCell>
+                <TableCell>{row.name?row.name:null}</TableCell>
+                <TableCell>{row.id?row.id:null}</TableCell>
+                <TableCell>{row.nametype?row.nametype:null}</TableCell>
+                <TableCell>{row.mass?row.mass:null}</TableCell>
+                <TableCell>{row.fall?row.fall:null}</TableCell>
                 <TableCell>{row.year?row.year.substring(0,4):null}</TableCell>
-                <TableCell>{row.reclat}</TableCell>
-                <TableCell>{row.reclong}</TableCell>
+                <TableCell>{row.reclat?row.reclat:null}</TableCell>
+                <TableCell>{row.reclong?row.reclong:null}</TableCell>
                 </TableRow>
             ))}
 
