@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/chinguPrework/precache-manifest.5f4b0fd7b7bc0c2101e2c628d6230eb0.js"
+  "/chinguPrework/precache-manifest.3b6d0c5f08312e9d3a3e7e282d6506da.js"
 );
 
 self.addEventListener('message', (event) => {
